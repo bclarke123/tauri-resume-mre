@@ -22,15 +22,3 @@ tauri = { version = "2", features = [] }
 tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-
-# --- GREEN test: build against the local fork that has the #3 fix ---
-# (remove this block to go back to published/buggy Tauri for the RED run)
-[patch.crates-io]
-tauri             = { path = "/Users/jamin/src/tauri/crates/tauri" }
-tauri-build       = { path = "/Users/jamin/src/tauri/crates/tauri-build" }
-tauri-runtime     = { path = "/Users/jamin/src/tauri/crates/tauri-runtime" }
-tauri-runtime-wry = { path = "/Users/jamin/src/tauri/crates/tauri-runtime-wry" }
-tauri-macros      = { path = "/Users/jamin/src/tauri/crates/tauri-macros" }
-tauri-codegen     = { path = "/Users/jamin/src/tauri/crates/tauri-codegen" }
-tauri-utils       = { path = "/Users/jamin/src/tauri/crates/tauri-utils" }
-
